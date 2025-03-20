@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; // 
 
 const Home = () => {
+  const navigate = useNavigate(); // 
+
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center text-center p-6">
       <div className="max-w-4xl bg-white p-10 rounded-2xl shadow-lg">
@@ -10,11 +13,23 @@ const Home = () => {
         </p>
         
         <div className="flex space-x-4 justify-center">
-          <button className="bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition">
-            Get Started
+          <button 
+            onClick={() => navigate("/landform")} // 
+            className="bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition"
+          >
+            Add Land
           </button>
-          <button className="bg-gray-200 text-gray-700 px-6 py-3 rounded-xl font-semibold hover:bg-gray-300 transition">
-            Learn More
+          <button
+            onClick={() => navigate("/landDashboard")} 
+            className="bg-gray-200 text-gray-700 px-6 py-3 rounded-xl font-semibold hover:bg-gray-300 transition"
+           >
+            Land Dashboard
+          </button>
+          <button
+            onClick={() => navigate("/profile")} 
+            className="bg-gray-200 text-gray-700 px-6 py-3 rounded-xl font-semibold hover:bg-gray-300 transition"
+           >
+            Profile
           </button>
         </div>
       </div>
