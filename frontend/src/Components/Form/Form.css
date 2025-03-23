@@ -1,0 +1,231 @@
+/* .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background: transparent;
+    resize: none;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+    color: rgba(34, 34, 96, 0.9);
+}
+
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+    color: rgba(34, 34, 96, 0.4);
+}
+
+.input-control input {
+    width: 100%;
+}
+
+.selects {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.selects select {
+    color: rgba(34, 34, 96, 0.4);
+}
+
+.selects select:focus,
+.selects select:active {
+    color: rgba(34, 34, 96, 1);
+}
+
+.submit-btn button {
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+}
+
+.submit-btn button:hover {
+    background: var(--color-green) !important;
+} */
+
+/* General settings for the form container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: #fff;
+    
+    border-radius: 10px;
+    
+    max-width:700px ;
+    margin: 2rem auto;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Error message styling */
+.error {
+    color: #ff4d4f;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Input control styling for labels and inputs */
+.input-control {
+    display: flex;
+    align-items: center; /* Ensures label and input are aligned */
+    gap: 1rem; /* Adds space between label and input */
+}
+
+.input-control label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #222;
+    
+    width: 30%; /* Ensures the label takes up 30% of the space */
+}
+
+.input-control input,
+.input-control textarea,
+.input-control select {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    background-color: #f9f9f9;
+    color: #333;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease;
+    outline: none;
+    width: 100%; /* Ensures the input takes up the remaining 70% space */
+}
+
+.input-control input:focus,
+.input-control textarea:focus,
+.input-control select:focus {
+    border-color: #4caf50;
+    box-shadow: 0px 0px 10px rgba(76, 175, 80, 0.2);
+}
+
+/* Placeholder text styling */
+.input-control input::placeholder,
+.input-control textarea::placeholder {
+    color: #aaa;
+}
+
+/* Textarea specific adjustments */
+.input-control textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Select dropdown styling */
+.selects select {
+    font-size: 1rem;
+    padding: 0.8rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    color: #333;
+    transition: border-color 0.3s ease;
+    width: 100%;
+}
+
+.selects select {
+    color: #aaa; /* Placeholder color */
+}
+
+.selects select:valid {
+    color: #333; /* Normal text color */
+}
+
+.selects{
+        display: flex;
+        justify-content: flex-end;
+        select{
+            color: rgba(34, 34, 96, 0.4);
+            &:focus, &:active{
+                color: rgba(34, 34, 96, 1);
+            }
+        }
+    }
+
+.selects select:focus {
+    border-color: #4caf50;
+    box-shadow: 0px 0px 10px rgba(76, 175, 80, 0.2);
+}
+
+/* Submit button styling */
+.submit-btn {
+    display: flex;
+    justify-content: flex-end;
+} 
+
+.submit-btn button {
+    background-color: #0099CC;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+} 
+
+.submit-btn button:hover {
+    background: rgba(58, 40, 150, 0.97);
+    transform: translateY(-2px);
+}
+
+.submit-btn button:active {
+    background-color: #388e3c;
+    transform: translateY(0);
+}
+
+/* Date picker specific adjustments */
+.react-datepicker-wrapper input {
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    width: 100%;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.react-datepicker-wrapper input:focus {
+    border-color: #4caf50;
+    box-shadow: 0px 0px 10px rgba(76, 175, 80, 0.2);
+}
+
+.success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+/* Styling for smaller screens */
+@media screen and (max-width: 600px) {
+    .form-container {
+        padding: 1.5rem;
+        max-width: 100%;
+    }
+
+    .input-control label {
+        font-size: 0.9rem;
+        width: 40%; /* Adjust label width on smaller screens */
+    }
+
+    .submit-btn button {
+        width: 100%;
+    }
+}
