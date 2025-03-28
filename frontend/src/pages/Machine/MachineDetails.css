@@ -1,0 +1,269 @@
+/*.machine-details-container {
+    display: flex;
+  }
+  
+  
+  .content3 {
+    margin-left: 230px; 
+    flex-grow: 1;
+    padding: 80px 60px 60px 60px;
+    background-color: #f4f6f9;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  
+  .title {
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  
+  .top-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  
+    
+  }
+  
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+ 
+  .search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+  
+    
+  }
+  
+  
+  .add-button button {
+    background: #27ae60;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  
+    
+  }
+  
+  .add-button button:hover {
+    background: #219150;
+  }
+  
+ 
+  .react-data-table {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+ 
+  .edit-btn, .delete-btn , .view-btn{
+    padding: 6px 12px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background: #f39c12;
+    color: white;
+  }
+  
+  .delete-btn {
+    background: #e74c3c;
+    color: white;
+  }
+  .view-btn {
+    background: #077127;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background: #d68910;
+  }
+  
+  .delete-btn:hover {
+    background: #c0392b;
+  }
+  
+  .view-btn:hover {
+    background: #56dea8;
+  }*/
+
+
+  /* Machine Details Page Layout */
+.machine-details-container {
+  display: flex;
+  width: 100%;
+}
+
+.content3 {
+  margin-left: 220px; /* Space for sidebar */
+  padding: 80px;
+  width: calc(100% - 220px);
+  background-color: #f4f6f9;
+  min-height: 100vh;
+}
+
+/* Title Styles */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Top Controls (Add Button) */
+.top-controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-button button {
+  background-color: #1a1375;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-button button:hover {
+  background-color: #686bcf;
+}
+
+/* Table Container */
+.table-container {
+  background-color: #d3d3d3;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* DataTable Styles */
+.react-data-table {
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+
+/* Action Buttons 
+.edit-btn2, .delete-btn2, .view-btn2 {
+  padding: 6px 12px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  
+}
+
+.edit-btn2 {
+  background: #f39c12;
+  color: white;
+}
+.view-btn2 {
+  background: #047b52;
+  color: white;
+}
+
+.delete-btn2 {
+  background: #e74c3c;
+  color: white;
+}
+
+.edit-btn2:hover {
+  background: #d68910;
+}
+.view-btn2:hover {
+  background: #20c377;
+}
+
+.delete-btn2:hover {
+  background: #c0392b;
+}
+*/
+/* Button Container */
+/* Button Container */
+.button-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center; /* Center buttons */
+  gap: 6px; /* Reduced space between buttons */
+}
+
+/* General Button Styles */
+.edit-btn2, .delete-btn2, .view-btn2 {
+  width: 60px; /* Reduce width */
+  height: 32px; /* Reduce height */
+  padding: 6px;
+  border: none;
+  border-radius: 4px; /* Slightly smaller radius */
+  cursor: pointer;
+  font-size: 12px; /* Reduce font size */
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+/* Edit Button */
+.edit-btn2 {
+  background: #f39c12;
+  color: white;
+}
+
+.edit-btn2:hover {
+  background: #d68910;
+  transform: scale(1.03); /* Smaller scaling effect */
+}
+
+/* View Button */
+.view-btn2 {
+  background: #047b52;
+  color: white;
+}
+
+.view-btn2:hover {
+  background: #20c377;
+  transform: scale(1.03);
+}
+
+/* Delete Button */
+.delete-btn2 {
+  background: #e74c3c;
+  color: white;
+}
+
+.delete-btn2:hover {
+  background: #c0392b;
+  transform: scale(1.03);
+}
+
+  
+  
+  
+  
+  

@@ -1,0 +1,84 @@
+/* Content Container */
+.content4 {
+  margin-left: 220px; /* Sidebar width + padding */
+  padding: 60px;
+  background-color: #f4f4f4; /* Light background for the page */
+}
+
+/* Page Title */
+.content4 h1 {
+  text-align: center;
+  font-size: 28px; /* Increased for better readability */
+  margin-bottom: 30px; /* Increased margin for better spacing */
+  color: #333;
+}
+
+/* Machine Image */
+.content4 img {
+  display: block;
+  margin: 0 auto 30px; /* Increased bottom margin for spacing */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  width: 280px; /* Slightly larger image size */
+  height: 280px; /* Matching height */
+  object-fit: cover; /* Ensure the image doesn't stretch */
+}
+
+/* Machine Details List */
+.content4 ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 650px; /* Slightly wider list container */
+  margin: 0 auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+.content4 ul li {
+  margin-bottom: 15px;
+  font-size: 16px; /* Increased font size for better readability */
+  line-height: 1.5; /* Improved line spacing */
+  color: #555;
+}
+
+.content4 ul li strong {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Back Button */
+.content4 button {
+  display: block;
+  margin: 30px auto 0; /* Increased top margin for spacing */
+  padding: 12px 25px; /* Larger padding for better button feel */
+  background-color: #3498db; /* Blue color for the button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px; /* Slightly larger font size */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.content4 button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight hover effect */
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .content4 {
+    padding: 30px; /* Reduced padding for smaller screens */
+  }
+
+  .content4 h1 {
+    font-size: 24px; /* Slightly smaller title on small screens */
+  }
+
+  .content4 img {
+    width: 220px; /* Smaller image for mobile screens */
+    height: 220px; 
+  }
+}

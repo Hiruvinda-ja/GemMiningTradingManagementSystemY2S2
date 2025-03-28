@@ -1,0 +1,146 @@
+/* General Page Layout */
+.add-machine-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    width: calc(100% - 220px); /* Sidebar width excluded */
+    margin-left: 220px; /* Adjust based on sidebar width */
+    padding: 20px;
+}
+
+/* Form Container */
+.form-container {
+    width: 100%;
+    max-width: 800px; /* Adjust for better spacing */
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Form Sections */
+.form-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.form-section > div {
+    flex: 1;
+}
+
+/* Form Input Styles */
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* File Upload Style */
+.form-group input[type="file"] {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .add-machine-container {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .form-container {
+        max-width: 95%;
+    }
+
+    .form-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+/* Form Input Styles */
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    resize: vertical; /* Allows resizing vertically */
+}
+
+/* Focus State for Textarea */
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .form-group textarea {
+        font-size: 14px;
+        padding: 12px; /* Adjust padding for smaller screens */
+    }
+}
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+
