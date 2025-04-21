@@ -80,7 +80,7 @@
     padding: 10px;
 }
 
-/* Submit Button */
+/* Submit Button 
 button[type="submit"] {
     background-color: #007bff;
     color: #fff;
@@ -93,6 +93,20 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
+    background-color: #0056b3;
+}*/
+.add-btn-machine {
+    background-color: #1a1375;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.add-btn-machine:hover {
     background-color: #0056b3;
 }
 
@@ -142,5 +156,27 @@ button[type="submit"]:hover {
     font-size: 12px;
     margin-top: 5px;
   }
-  
+  .btn2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* space between button and heading */
+    align-items: center;
+    margin-bottom: 20px;
+    gap:10px;
+}
 
+.go-back-btn {
+    background-color: #be8b1d;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;  
+    margin: 0;
+}
+
+.go-back-btn:hover {
+    background-color: #5a6268;
+}

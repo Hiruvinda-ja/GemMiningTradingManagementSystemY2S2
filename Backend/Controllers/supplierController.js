@@ -1,3 +1,4 @@
+//*
 const supplierSchema = require("../Model/supplierModel")
 
 
@@ -71,3 +72,8 @@ exports.updateSupplier = async (req, res) => {
         res.status(400).json({ message: "Server error", error: error.message });
     }
 };
+
+
+
+
+

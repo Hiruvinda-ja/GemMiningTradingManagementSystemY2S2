@@ -33,9 +33,9 @@ function ViewMachine() {
           <li><strong>Model Number:</strong> {machine.modelNumber}</li>
           <li><strong>Category:</strong> {machine.machineCategory}</li>
           <li><strong>Supplier:</strong> {machine.supplier?.name || "N/A"}</li>
-          <li><strong>Status:</strong> {machine.status}</li>
-          <li><strong>Price:</strong> {machine.price}</li>
+          <li><strong>Rent price per day:</strong> {machine.price}</li>
           <li><strong>Quantity Available:</strong> {machine.quantityAvailable}</li>
+          <li><strong>Contact Number:</strong> {machine.phone}</li>
           <li><strong>Condition:</strong> {machine.machineCondition}</li>
           <li><strong>Serial Number:</strong> {machine.serialNumber}</li>
           <li><strong>Location:</strong> {machine.location}</li>

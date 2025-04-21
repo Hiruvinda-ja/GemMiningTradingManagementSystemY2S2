@@ -22,7 +22,8 @@ const upload = multer({ storage: storage });
 router.post("/add-machine", upload.single("machineImages"), addMachine);
 router.get("/get-machines", getMachines);
 router.delete("/delete-machine/:id", deletemachine);
-router.put("/update-machine/:id", updateMachine);
+//router.put("/update-machine/:id", updateMachine);
+router.put("/update-machine/:id", upload.single("machineImages"), updateMachine);
 
 
 

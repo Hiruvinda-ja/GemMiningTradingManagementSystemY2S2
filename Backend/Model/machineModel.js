@@ -27,11 +27,7 @@ const machineSchema=new mongoose.Schema({
         ref: 'supplierModel', // Reference to the Supplier model
         required: true
     },
-    status: {
-        type: String,
-        enum: ['Rent', 'Sale'], // Restrict values to Rent or Sale
-        required: true
-    },
+    
     
     price: {
         type: Number,
@@ -43,6 +39,15 @@ const machineSchema=new mongoose.Schema({
         required: true,
         min: [0, 'Quantity must be a positive number']
     },
+    phone:{
+        type:String,
+        required:true,
+        trim:true,
+        maxLength:10
+
+    },
+
+
     machineCondition: {
         type: String,
         enum: ['New', 'Refurbished', 'Used'],

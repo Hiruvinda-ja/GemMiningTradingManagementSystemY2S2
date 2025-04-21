@@ -128,6 +128,7 @@ if (!supplier.location.trim()) {
             </div>
 
             <button className='update-supplier-btn' type="submit">Update Supplier</button>
+            <button type="button" className='go-back-btn-supplier' onClick={() => navigate('/supplierDetails')}>Go Back</button>
           </form>
       </div>
       
